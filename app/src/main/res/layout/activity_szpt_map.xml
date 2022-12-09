@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.zhang.szptcircle.activity.SzptMapActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="#9e5cd0"
+        >
+        <ImageView
+            android:layout_marginTop="15dp"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_marginLeft="6dp"
+            android:src="@mipmap/back"/>
+
+        <TextView
+            android:id="@+id/tv_backmap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:paddingTop="12dp"
+            android:text="返回"
+            android:textColor="@color/skin_text_white"
+            android:textSize="18sp" />
+    </LinearLayout>
+        <ImageView
+            android:id="@+id/iv_szptmap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/szptmap"/>
+
+
+
+</LinearLayout>

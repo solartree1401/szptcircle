@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#9e5cd0"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingTop="14sp"
+            android:text="首页"
+            android:textColor="@color/skin_text_white"
+            android:textSize="18sp" />
+
+
+    </LinearLayout>
+    <com.youth.banner.Banner
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="30dp">
+
+        <TextView
+            android:id="@+id/tv_map"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_map"
+            android:layout_marginLeft="42dp"
+            android:layout_marginTop="29dp"
+            android:layout_toRightOf="@id/tv_rg"
+            android:text="深职地图"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/tv_rg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@id/btn_ocr"
+            android:layout_marginLeft="74dp"
+            android:layout_marginTop="28dp"
+            android:text="文字识别"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_tranicon"
+            android:layout_marginLeft="41dp"
+            android:layout_marginTop="28dp"
+            android:layout_toRightOf="@id/tv_map"
+            android:text="翻译工具"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/btn_tranicon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="53dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/btn_map"
+            android:background="@mipmap/translation"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <Button
+            android:id="@+id/btn_ocr"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="75dp"
+            android:layout_marginTop="20dp"
+            android:background="@mipmap/ocr"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <Button
+            android:id="@+id/btn_map"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="49dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/btn_ocr"
+            android:background="@mipmap/map"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>
